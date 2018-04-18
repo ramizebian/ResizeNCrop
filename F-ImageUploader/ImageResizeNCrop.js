@@ -66,7 +66,7 @@ $(function () {
         var canvasSource = document.getElementById("canvasSource");
         context.drawImage(canvasSource, x1, y1, width, height, 0, 0, width, height);
 
-        $('#imgCropped').val(canvas.toDataURL());
+        $('#imgCropped').val(canvas.toDataURL("image/jpeg", 1));
         //$('[id*=btnUpload]').show();
         $('[id*=btnUploadAjax]').show();
         $('.Preview').show();
